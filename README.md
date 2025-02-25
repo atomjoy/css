@@ -62,7 +62,7 @@ Css styles.
 }
 ```
 
-## Thene
+## Themes
 
 ```css
 /* @tailwind base;
