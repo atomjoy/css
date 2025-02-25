@@ -1,5 +1,5 @@
-# Css
-Css styles.
+# Css Svg Theme Vue
+Css styles and Vue 3 load svg dynamically, change theme, change locale, change title, change description components.
 
 ## Glue
 
