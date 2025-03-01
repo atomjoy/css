@@ -17,7 +17,7 @@
 	--bw-text-8: #c8c8c8;
 
 	--bw-white-1: #ffffff;
-	--bw-white-2: #fefefe;
+	--bw-white-2: #fcfcfc;
 	--bw-white-3: #fafafa;
 	--bw-white-4: #f9f9f9;
 	--bw-white-5: #f7f7f7;
@@ -35,13 +35,21 @@
 	--bw-black-8: #909090;
 
 	--bw-dark-1: #1a1a1a;
-	--bw-dark-2: #1f1f1f;
-	--bw-dark-3: #2f2f2f;
-	--bw-dark-4: #3f3f3f;
-	--bw-dark-5: #4f4f4f;
-	--bw-dark-6: #5f5f5f;
-	--bw-dark-7: #6f6f6f;
-	--bw-dark-8: #9f9f9f;
+	--bw-dark-2: #1c1c1c;
+	--bw-dark-3: #1e1e1e;
+	--bw-dark-4: #1f1f1f;
+	--bw-dark-5: #2f2f2f;
+	--bw-dark-6: #3f3f3f;
+	--bw-dark-7: #4f4f4f;
+	--bw-dark-8: #5f5f5f;
+	--bw-dark-9: #6f6f6f;
+
+	--bw-game-1: #202331;
+	--bw-game-2: #232634;
+	--bw-game-3: #262a3a;
+	--bw-game-4: #2a2e40;
+	--bw-game-5: #2d3145;
+	--bw-game-6: #666c88;
 
 	--bw-icon-1: #cacaca;
 	--bw-icon-2: #c9cfd3;
@@ -51,9 +59,10 @@
 	--bw-icon-6: #687076;
 	--bw-icon-7: #525a60;
 	--bw-icon-8: #323a40;
+	--bw-icon-9: #79838f;
 
 	--bw-border-1: #edeff1;
-	--bw-border-2: #e6e8ea;
+	--bw-border-2: #e6e8ea; /* d8dad5 */
 	--bw-border-3: #d9d9d9;
 	--bw-border-4: #dee0e2;
 	--bw-border-5: #c1c5c8;
@@ -129,7 +138,7 @@
 	--bw-li-icon-1: #acb3b9;
 	--bw-li-icon-2: #7c7b74;
 
-	--bw-inp-bg: #f8f8f9;
+	--bw-inp-bg: #f3f3f3;
 	--bw-inp-border: #e5e7ea;
 	--bw-inp-holder: #92999f;
 	--bw-inp-label: #6b7379;
@@ -148,11 +157,12 @@
 	--text-1: var(--bw-text-1);
 	--text-2: var(--bw-text-3);
 	--text-3: var(--bw-text-6);
-	--icon-1: var(--bw-icon-1);
+	--icon-1: var(--bw-icon-9);
 	--icon-2: var(--bw-icon-2);
 	--icon-3: var(--bw-icon-3);
 	--accent: var(--bw-btn-bg-3);
-	--border: var(--bw-border-2);
+	--accent-hover: var(--bw-blue-2);
+	--border: var(--bw-border-3);
 	--divider: var(--bw-border-1);
 	--disabled: var(--bw-black-8);
 	--placeholder: var(--bw-text-8);
@@ -164,21 +174,26 @@
 	--button-bg: var(--bw-btn-bg-3);
 	--button-color: var(--bw-white-1);
 	--button-border: var(--bw-btn-border-3);
-	--input-bg: var(--bw-inp-bg);
-	--input-border: var(--bw-inp-border);
-	--input-holder: var(--bw-inp-holder);
-	--input-label: var(--bw-inp-label);
-	--input-icon: var(--bw-inp-icon);
+	--button-radius: 10px;
 	--logo: url('/default/logo/logo-light.png');
+	--input-radius: 10px;
+	--input-font-size: 16px;
+	--input-font-family: var(--font-family);
+	--input-border: var(--border);
+	--input-holder: var(--bw-text-5);
+	--input-label: var(--bw-text-6);
+	--input-icon: var(--icon-1);
+	--input-bg: var(--bw-white-3);
+	--column: var(--bw-li-1);
 }
 
 /* color mode from browser settings */
 @media (prefers-color-scheme: dark) {
 	:root {
 		color-scheme: dark;
-		--bg-1: var(--bw-dark-1);
+		--bg-1: var(--bw-dark-2);
 		--bg-2: var(--bw-dark-3);
-		--bg-3: var(--bw-dark-6);
+		--bg-3: var(--bw-dark-4);
 		--text-1: var(--bw-white-1);
 		--text-2: var(--bw-white-3);
 		--text-3: var(--bw-white-6);
@@ -186,6 +201,7 @@
 		--icon-2: var(--bw-icon-2);
 		--icon-3: var(--bw-icon-3);
 		--accent: var(--bw-btn-bg-3);
+		--accent-hover: var(--bw-blue-2);
 		--border: var(--bw-border-2);
 		--divider: var(--bw-border-1);
 		--disabled: var(--bw-black-8);
@@ -195,15 +211,16 @@
 		--scrollbar-bg: #e6e6e6;
 		--scrollbar-thumb: var(--bw-btn-bg-3);
 		--scrollbar-width: 8px;
-		--button-bg: var(--bw-btn-bg-3);
+		--input-bg: var(--bw-dark-2);
 		--button-color: var(--bw-white-1);
 		--button-border: var(--bw-btn-border-3);
-		--input-bg: var(--bw-dark-3);
-		--input-border: var(--bw-dark-6);
+		--logo: url('/default/logo/logo-dark.png');
+		--input-border: var(--bw-dark-5);
 		--input-holder: var(--bw-dark-6);
-		--input-label: var(--bw-text-8);
-		--input-icon: var(--bw-icon-3);
-		--logo: url('/default/logo/logo-light.png');
+		--input-label: var(--bw-text-6);
+		--input-icon: var(--input-border);
+		--input-bg: var(--bw-dark-3);
+		--column: var(--bw-dark-6);
 	}
 }
 
@@ -216,10 +233,11 @@
 	--text-1: var(--bw-text-1);
 	--text-2: var(--bw-text-3);
 	--text-3: var(--bw-text-6);
-	--icon-1: var(--bw-icon-1);
+	--icon-1: var(--bw-icon-9);
 	--icon-2: var(--bw-icon-2);
 	--icon-3: var(--bw-icon-3);
 	--accent: var(--bw-btn-bg-3);
+	--accent-hover: var(--bw-blue-2);
 	--border: var(--bw-border-2);
 	--divider: var(--bw-border-1);
 	--disabled: var(--bw-black-8);
@@ -232,45 +250,48 @@
 	--button-bg: var(--bw-btn-bg-3);
 	--button-color: var(--bw-white-1);
 	--button-border: var(--bw-btn-border-3);
-	--input-bg: var(--bw-inp-bg);
-	--input-border: var(--bw-inp-border);
-	--input-holder: var(--bw-inp-holder);
-	--input-label: var(--bw-inp-label);
-	--input-icon: var(--bw-inp-icon);
 	--logo: url('/default/logo/logo-light.png');
+	--input-font-family: var(--font-family);
+	--input-border: var(--border);
+	--input-holder: var(--bw-text-5);
+	--input-label: var(--bw-text-6);
+	--input-icon: var(--icon-1);
+	--input-bg: var(--bw-white-2);
 }
 
 /* color mode from <html color-scheme="dark"> */
 [color-scheme='dark'] {
 	color-scheme: dark;
-	--bg-1: var(--bw-dark-1);
+	--bg-1: var(--bw-dark-2);
 	--bg-2: var(--bw-dark-3);
-	--bg-3: var(--bw-dark-6);
-	--text-1: var(--bw-white-1);
-	--text-2: var(--bw-white-3);
-	--text-3: var(--bw-white-6);
+	--bg-3: var(--bw-dark-4);
+	--text-1: var(--bw-white-6);
+	--text-2: var(--bw-text-8);
+	--text-3: var(--bw-text-9);
 	--icon-1: var(--bw-icon-1);
 	--icon-2: var(--bw-icon-2);
 	--icon-3: var(--bw-icon-3);
 	--accent: var(--bw-btn-bg-3);
+	--accent-hover: var(--bw-blue-2);
 	--border: var(--bw-border-2);
 	--divider: var(--bw-border-1);
 	--disabled: var(--bw-black-8);
 	--placeholder: var(--bw-text-8);
 	--selection-color: #ffffff;
 	--selection-bg: #0e7aff;
-	--scrollbar-bg: #e6e6e6;
+	--scrollbar-bg: #3f3f3f;
 	--scrollbar-thumb: var(--bw-btn-bg-3);
 	--scrollbar-width: 8px;
 	--button-bg: var(--bw-btn-bg-3);
 	--button-color: var(--bw-white-1);
 	--button-border: var(--bw-btn-border-3);
-	--input-bg: var(--bw-dark-3);
-	--input-border: var(--bw-dark-6);
+	--logo: url('/default/logo/logo-dark.png');
+	--input-border: var(--bw-dark-5);
 	--input-holder: var(--bw-dark-6);
-	--input-label: var(--bw-text-8);
-	--input-icon: var(--bw-icon-3);
-	--logo: url('/default/logo/logo-light.png');
+	--input-label: var(--bw-text-6);
+	--input-icon: var(--input-border);
+	--input-bg: var(--bw-dark-3);
+	--column: var(--bw-dark-6);
 }
 
 /* page */
@@ -360,6 +381,21 @@ svg {
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-bg);
+}
+
+/* navbar scrollbar */
+.scrollbar-navbar {
+	scrollbar-width: thin;
+	scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+}
+
+.scrollbar-navbar::-webkit-scrollbar {
+	width: var(--scrollbar-width);
+	background: var(--scrollbar-thumb);
+}
+
+.scrollbar-navbar::-webkit-scrollbar-thumb {
 	background: var(--scrollbar-bg);
 }
 
