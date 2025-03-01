@@ -1,17 +1,19 @@
 :root {
 	--white-1: #ffffff;
-	--white-2: #fafafa;
-	--white-3: #f9f9f9;
-	--white-4: #f7f7f7;
-	--white-5: #f3f3f3;
-	--white-6: #f2f2f2;
+	--white-2: #fefefe;
+	--white-3: #fafafa;
+	--white-4: #f9f9f9;
+	--white-5: #f7f7f7;
+	--white-6: #f3f3f3;
+	--white-7: #f2f2f2;
 
-	--black-1: #141414;
-	--black-2: #242424;
-	--black-3: #343434;
-	--black-4: #444444;
-	--black-5: #545454;
-	--black-6: #646464;
+	--black-1: #0f0f0f;
+	--black-2: #141414;
+	--black-3: #242424;
+	--black-4: #343434;
+	--black-5: #444444;
+	--black-6: #545454;
+	--black-7: #646464;
 
 	--dark-1: #1a1a1a;
 	--dark-2: #1f1f1f;
@@ -19,13 +21,15 @@
 	--dark-4: #3f3f3f;
 	--dark-5: #4f4f4f;
 	--dark-6: #5f5f5f;
+	--dark-7: #6f6f6f;
 
 	--text-1: #11181c;
 	--text-2: #222222;
 	--text-3: #697077;
 	--text-4: #8f8f8f;
 	--text-5: #999999;
-	--text-6: #c8c8c8;
+	--text-6: #a8a8a8;
+	--text-7: #c8c8c8;
 
 	--icon-1: #cacaca;
 	--icon-2: #c9cfd3;
@@ -33,6 +37,7 @@
 	--icon-4: #979797;
 	--icon-5: #878f95;
 	--icon-6: #687076;
+	--icon-7: #525a60;
 
 	--border-1: #edeff1;
 	--border-2: #e6e8ea;
@@ -46,21 +51,23 @@
 	--alert-2: #f7d44c;
 	--alert-3: #ea815b;
 	--alert-4: #a8d672;
+	--alert-5: #00ca47;
 	--alert-dark-1: #315aae;
 	--alert-dark-2: #efb35f;
 	--alert-dark-3: #cf5d5d;
-	--alert-dark-4: #45a76f;
+	--alert-dark-4: #84c43b;
+	--alert-dark-5: #00b13f;
 
 	--btn-bg-1: #fbfcfd;
 	--btn-bg-2: #151718;
-	--btn-bg-3: #0057ff;
+	--btn-bg-3: #0075ff;
 
 	--btn-border-1: #e3e6e9;
 	--btn-border-2: #000000;
 	--btn-border-3: #0045cc;
 
 	--blue-1: #0069db;
-	--blue-2: #0081f1;
+	--blue-2: #0080f0;
 
 	--navy-1: #2a4fd2;
 	--navy-2: #3f61d9;
@@ -70,6 +77,9 @@
 
 	--green-1: #118834;
 	--green-2: #299549;
+
+	--oceanic-1: #00b13f;
+	--oceanic-2: #09c44b;
 
 	--lime-1: #b9f52b;
 	--lime-2: #ccf23e;
@@ -110,4 +120,8 @@
 	--inp-holder: #92999f;
 	--inp-label: #6b7379;
 	--inp-title: #11181c;
+	--inp-icon: #dcdbe0;
+	--inp-tooltip: #dfe0e3;
+	--inp-accent: #e36c40;
+	--inp-shadow: #e36c4044;
 }
