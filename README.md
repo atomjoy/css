@@ -1,5 +1,11 @@
-# Css Svg Theme Vue
-Css styles and Vue 3 load svg dynamically, change theme, change locale, change title, change description components.
+# Css dark mode theme
+Css styles ...
+
+## Import
+
+```css
+@import url('@/assets/css/root.css');
+```
 
 ## Black white theme 
 
